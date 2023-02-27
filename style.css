@@ -1,0 +1,182 @@
+@import url("https://fonts.google.com/specimen/Raleway");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(229, 57%, 11%);
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 20rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.boxes {
+  display: flex;
+  gap: 1rem;
+  height: 10rem;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin-top: -15rem;
+}
+.box {
+  background: hsl(228, 56%, 26%);
+  
+}
+
+#box-1{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-top-right-radius: 5rem;
+          width: 15rem;
+  height: 10rem;
+}
+#box-1 .logo img{
+          width: 5rem;
+}
+.folders{
+          display: flex;
+          gap: 1rem;
+          padding: 2rem;
+          justify-content: center;
+          align-items: center;
+}
+.folder{
+          background:hsl(229, 57%, 11%) ;
+          border-radius: .5rem;
+             padding: .5rem;
+             width: 2rem;
+             height: 2rem;
+}
+.folder img{
+          width: 1rem;
+          height: 1rem;
+       
+}
+#box-2{
+width: 25rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ gap: .5rem;
+ font-size: .7rem;
+ position: relative;
+
+}
+#box-2 p{
+      float: left;
+}
+.data-left{
+          background-color: #fff;
+          color: hsl(229, 57%, 11%);
+          width: 5rem;
+          height: 3rem;
+       position: absolute;
+       top: 0;
+       right: 0;
+       margin-top: -1.5rem;
+       margin-right: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-weight: 700;
+       border-bottom-left-radius: 100px solid transparent;
+}
+.data-left span{
+          font-weight: 400;
+}
+.bar{
+          background:hsl(229, 57%, 11%) ;
+          height: .6rem;
+          width: 18rem;
+          border-radius: 1rem;
+}
+.pink-bar{
+          background:hsl(304, 70%, 44%) ;
+          height: .6rem;
+          width: 16rem;
+          border-radius: 1rem;
+          position: relative;
+} 
+.white-dot{
+    background:hsl(300, 12%, 95%) ;
+          height: .6rem;
+          width: .5rem;
+          border-radius: .7rem;   
+          position: absolute;
+          right: 0;      
+}
+.attribution{
+          position: absolute;
+          bottom: 0;
+          padding: 1rem;
+}
+.attribution a{
+          color: #fff;
+          text-decoration: none;
+}
+
+@media (max-width:390px) {
+body{
+          position: relative;
+}
+          .container{
+          background: url('./images/bg-mobile.png');
+  justify-content: center;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.boxes{
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+     
+}
+.box{
+               padding: 7rem 1rem;
+}
+#box-2 {
+          position: relative;
+          width: 20rem;
+          border-radius: 1rem;
+}
+.data-left{
+          position: absolute;
+
+          margin-left: -20rem;
+          border-radius: .4rem;
+}
+
+}
